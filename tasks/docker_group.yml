@@ -22,7 +22,7 @@
     and ansible_version.major <= 2 and ansible_version.minor <3
 
 # See https://stackoverflow.com/a/44753457
-- name: Reset ansible connection after group changes
-  meta: reset_connection
-  when: ansible_version.major = 2
-    and ansible_version.minor >= 3
+# - name: Reset ansible connection after group changes
+#   meta: reset_connection
+#   when: ansible_version.major = 2
+#     and ansible_version.minor >= 3
