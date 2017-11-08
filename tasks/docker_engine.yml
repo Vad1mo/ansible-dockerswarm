@@ -41,9 +41,9 @@
     state: present
   with_items: "{{ docker_dependencies }}"
 
-- name: Install the Docker Engine.
+- name: Install the Docker CE.
   package:
-    name: docker-engine
+    name: docker-ce
     state: present
 
 - name: Enable the Docker daemon as a service and start it.
